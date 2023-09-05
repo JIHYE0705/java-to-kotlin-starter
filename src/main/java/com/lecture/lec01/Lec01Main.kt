@@ -14,7 +14,4 @@ fun main() {
      */
 
     var person = Person("jihye") // java 의 `new` 키워드를 사용하지 않음
-
-
-
 }
