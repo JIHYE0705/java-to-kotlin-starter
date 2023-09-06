@@ -33,3 +33,8 @@
   - 단, 객체끼리도 자동 호출되는 `compareTo` 를 이용해 비교 연산자를 사용할 수 있다
 - `in`, `!in` / `a..b` / `a[i]` / `a[i] = b` 와 같이 코틀린에서 새로 생긴 연산자도 있다
 - 객체끼리의 연산자를 직접 정의할 수 있다
+
+## 5강. Kotlin에서 조건문을 다루는 방법
+- `if` / `if - else` / `if - else if - else` 모두 Java 와 문법이 동일하다
+- 단 Kotlin 에서는 Expression 으로 취급된다 -> 때문에 Kotlin 에서는 삼항 연산자가 없다
+- Java 의 `switch` 는 Kotlin 에서 `when` 으로 대체되었고, `when` 은 더 강력한 기능을 갖는다
