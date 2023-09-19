@@ -45,8 +45,25 @@
 - 그 외의 for 문 문법은 모두 동일하다
 - while 문과 do-while 문은 더욱더 놀랍도록 동일하다
 
-## 7. Kotlin에서 예외를 다르는 방법
+## 7. Kotlin에서 예외를 다루는 방법
 - `try-catch-finally` 구문은 문법적으로 완전히 동일하다
   - Kotlin 에서는 `try-catch` 가 expression 이다
 - Kotlin 에서 모든 예외는 `Unchecked Exception` 이다
 - Kotlin 에서는 `try with resources` 구문이 없다 대신 Kotlin 의 언어적 특징을 활용해 `close` 를 호출해준다
+
+## 8. Kotlin에서 함수를 다루는 방법
+- 함수의 문법은 Java 와 다르다
+  ```kotlin
+  접근지시어 fun 함수이름(파라미터): 반환타입 {
+      
+  }
+  ```
+- body 가 하나의 값으로 간주되는 경우 block 을 없앨 수 있고, block 이 없다면 반환 타입을 없앨 수도 있다
+  ```kotlin
+  fun max(a: Int, b: Int): Int = if(a > b) a else b
+  ```
+  ```kotlin
+  fun max(a: Int, b: Int) = if(a > b) a else b
+  ```
+- 함수 파라미터에 기본값을 설정해줄 수 있다
+- 가변인자에는 `vararg` 키워드를 사용하며, 가변인자 함수를 배열과 호출할 때는 `*` 를 붙여주어야 한다
