@@ -44,3 +44,9 @@
 - 전통적인 for 문에서 Kotlin 은 `등차수열` 과 `in` 을 사용한다
 - 그 외의 for 문 문법은 모두 동일하다
 - while 문과 do-while 문은 더욱더 놀랍도록 동일하다
+
+## 7. Kotlin에서 예외를 다르는 방법
+- `try-catch-finally` 구문은 문법적으로 완전히 동일하다
+  - Kotlin 에서는 `try-catch` 가 expression 이다
+- Kotlin 에서 모든 예외는 `Unchecked Exception` 이다
+- Kotlin 에서는 `try with resources` 구문이 없다 대신 Kotlin 의 언어적 특징을 활용해 `close` 를 호출해준다
