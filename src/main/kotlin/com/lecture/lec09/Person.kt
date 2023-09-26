@@ -25,7 +25,7 @@ class Person(val name: String, var age: Int) {
         if(age <= 0) {
             throw IllegalArgumentException("나이는 ${age}일 수 없습니다")
         }
-        println("초기화 불록")
+        println("초기화 블록")
     }
     constructor(name: String): this(name, 1) {
         println("첫 번째 부생성자")
@@ -43,7 +43,7 @@ class Person2(val name: String = "jihye", var age: Int = 1) {
     //    val name = name
 //        get() = field.uppercase()
 
-    fun getUppercaseName():String = this.name.uppercase()
+//    fun getUppercaseName(): String = this.name.uppercase()
 
 
     val uppercaseName: String
@@ -53,7 +53,7 @@ class Person2(val name: String = "jihye", var age: Int = 1) {
         if(age <= 0) {
             throw IllegalArgumentException("나이는 ${age}일 수 없습니다")
         }
-        println("초기화 불록")
+        println("초기화 블록")
     }
 
     val isAdult: Boolean
@@ -70,7 +70,7 @@ class Person3(name: String = "jihye3", var age: Int = 1) {
         if(age <= 0) {
             throw IllegalArgumentException("나이는 ${age}일 수 없습니다")
         }
-        println("초기화 불록")
+        println("초기화 블록")
     }
 
     val isAdult: Boolean

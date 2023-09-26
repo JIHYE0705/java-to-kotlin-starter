@@ -1,7 +1,5 @@
 package com.lecture.lec07
 
-import java.lang.NumberFormatException
-
 fun parseIntOrThrow(str: String): Int {
     try {
         return str.toInt()
