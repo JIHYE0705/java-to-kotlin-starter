@@ -9,15 +9,11 @@ public class JavaHouse {
         this.livingRoom = new LivingRoom(10);
     }
 
-    public class LivingRoom {
+    public static class LivingRoom {
         private double area;
 
         public LivingRoom(double area) {
             this.area = area;
-        }
-
-        public double getArea() {
-            return area;
         }
     }
 }
