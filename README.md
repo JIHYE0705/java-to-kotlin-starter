@@ -77,8 +77,8 @@
     var age: Int = 1
   }
   ```
-- Kotlin 에서는 `주생성자` 가 필수이다
-- Kotlin 에서는 constructor 키워드를 사용해 `부생성자` 를 추가로 만들 수 있다
+- Kotlin 에서는 `primary constructor` 가 필수이다
+- Kotlin 에서는 constructor 키워드를 사용해 `secondary constructor` 를 추가로 만들 수 있다
   - 단, default parameter 나 정적 팩토리 메소드를 추천한다
 - 실제 메모리에 존재하는 것과 무관하게 `custom getter` 와 `custom setter` 를 만들 수 있다
 - custom getter, custom setter 에서 무한루프를 막기위해 `field` 라는 키워드를 사용한다
