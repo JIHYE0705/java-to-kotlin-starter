@@ -70,7 +70,7 @@
 
 ## 9. Kotlin에서 class를 다루는 방법
 - Kotlin 에서는 필드를 만들면 getter 와 (필요에 따라) setter 가 자동으로 생긴다
-  - 때문에 이를 `프로퍼티` 라고 부른다
+  - 때문에 이를 `property` 라고 부른다
   ```kotlin
   class Person { 
     val name: String = "jihye"
