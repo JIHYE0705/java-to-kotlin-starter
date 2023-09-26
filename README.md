@@ -95,41 +95,32 @@
 
 ## 11. Kotlin에서 접근 제어를 다루는 방법
 
-#### Java
 <table>
   <tr>
+    <th colspan="2">Java</th>
+    <th colspan="2">Kotlin</th>
+  </tr>
+  <tr>
+    <td>public</td>
+    <td>모든 곳에서 접근 가능</td>
     <td>public</td>
     <td>모든 곳에서 접근 가능</td>
   </tr>
   <tr>
     <td>protected</td>
     <td>같은 패키지 또는 하위 클래스에서만 접근 가능</td>
-  </tr>
-  <tr>
-    <td>default</td>
-    <td>같은 패키지에서만 접근 가능</td>
-  </tr>
-  <tr>
-    <td>private</td>
-    <td>선언된 클래스 내에서만 접근 가능</td>
-  </tr>
-</table>
-
-#### Kotlin
-<table>
-  <tr>
-    <td>public</td>
-    <td>모든 곳에서 접근 가능</td>
-  </tr>
-  <tr>
     <td>protected</td>
     <td>선언된 클래스 또는 하위 클래스에서만 접근 가능</td>
   </tr>
   <tr>
+    <td>default</td>
+    <td>같은 패키지에서만 접근 가능</td>
     <td>internal</td>
     <td>같은 모듈에서만 접근 가능</td>
   </tr>
   <tr>
+    <td>private</td>
+    <td>선언된 클래스 내에서만 접근 가능</td>
     <td>private</td>
     <td>선언된 클래스 내에서만 접근 가능</td>
   </tr>
