@@ -2,6 +2,9 @@ package com.lecture.lec14;
 
 import java.util.Objects;
 
+/*
+    계층간의 데이터를 전달하기 위한 DTO(Data Transfer Object)
+ */
 public class JavaPersonDto {
     private final String name;
     private final int age;

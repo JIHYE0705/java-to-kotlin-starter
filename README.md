@@ -172,3 +172,8 @@
   <td>바깥 클래스 참조 있음</td>
 </tr>
 </table>
+
+## 14. Kotlin에서 다양한 클래스를 다루는 방법
+- Kotlin 의 `Data class` 를 사용하면 equals, hashCode, toString 을 자동으로 만들어준다
+- Kotlin 의 `Enum Class` 는 Java 의 Enum Class 와 동일하지만, when 과 함께 사용함으로써 큰 장점을 갖게 된다
+- Enum Class 보다 유연하지만, 하위 클래스를 제한하는 `Sealed Class` 역시 when 과 함께 주로 사용된다
