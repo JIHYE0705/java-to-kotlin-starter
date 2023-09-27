@@ -177,3 +177,22 @@
 - Kotlin 의 `Data class` 를 사용하면 equals, hashCode, toString 을 자동으로 만들어준다
 - Kotlin 의 `Enum Class` 는 Java 의 Enum Class 와 동일하지만, when 과 함께 사용함으로써 큰 장점을 갖게 된다
 - Enum Class 보다 유연하지만, 하위 클래스를 제한하는 `Sealed Class` 역시 when 과 함께 주로 사용된다
+
+## 15. Kotlin에서 배열과 컬렉션을 다루는 방법
+- 배열의 사용법이 약간 다르다
+```kotlin
+val array = arrayOf(100, 200)
+
+for(i in array.indices) {
+    println("$i $array[i]")
+}
+
+for((idx, value) in array.withIndex()) {
+    println("$idx $value")
+}
+```
+- Kotlin 에서는 컬렉션을 만들 때도 불변/가변을 지정해야 한다
+- List, Set, Map 에 대한 사용법이 변경, 확장되었다
+- Java 와 Kotlin 코드를 섞어 컬렉션을 사용할 때에는 주의해야 한다
+  - Java 에서 Kotlin 컬렉션을 가져갈 때는 `불변 컬렉션을 수정` 할수도 있고, `non-nullable 컬렉션에 null 을 넣을` 수도 있다
+  - Kotlin 에서 Java 컬렉션을 가져갈 때는 `플랫폼타입` 을 주의해야 한다
